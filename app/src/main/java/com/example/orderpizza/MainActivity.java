@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void proceed(View view){
         if(findViewById(R.id.proceed_button).isActivated()) {
-            String order="Ordered Summary: \n\n";
+            String order="Order Summary: \n\n";
             double amount=0;
             Intent intent = new Intent(this, MainActivity2.class);
             if(((CheckBox)findViewById(R.id.pizza_margherita)).isChecked()){
