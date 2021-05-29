@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string-array name="pay_mode">
+        <item>Cash On Delivery</item>
+    </string-array>
+</resources>

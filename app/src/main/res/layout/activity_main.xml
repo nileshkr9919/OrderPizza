@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_grey"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="16dp"
+                android:paddingRight="20dp"
+                android:text="Choose your item:"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+
+            <CheckBox
+                android:id="@+id/pizza_margherita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:text="Pizza Margherita"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/pizza_tomato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:text="Pizza Quick Tomato"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/pizza_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:text="Pizza Four Cheese"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/pizza_vegetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:text="Pizza Cheesy Vegetable"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/quantity_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/margherita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/quantity_margherita"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/quantity_margherita_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tomato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/quantity_quick_tomato"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/quantity_quick_tomato_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/quantity_four_cheese"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/quantity_four_cheese_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vegetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/quantity_cheesy_vegetable"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/quantity_cheesy_vegetable_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/proceed_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@null"
+                android:clickable="false"
+                android:text="Proceed"
+                android:textSize="24sp"
+                android:onClick="proceed"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
